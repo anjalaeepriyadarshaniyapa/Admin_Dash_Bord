@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Dashboard</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+	<style>
+	#mainPanel{
+		border-radius: 25px;
+		background-image: linear-gradient(to right, #07141b, #daa909);
+	}
+	/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+	.row.content {height: 550px}
+
+	/* Set gray background color and 100% height */
+	.sidenav {
+		background-color: #f1f1f1;
+		height: 100%;
+		border-radius: 25px 0 0 25px;
+	}
+
+	/* On small screens, set height to 'auto' for the grid */
+	@media screen and (max-width: 767px) {
+		.row.content {height: auto;} 
+		#mainPanel{
+			border-radius: 0px;
+			background-image: linear-gradient(to right, #021724, #ca980e);
+		}
+	}
+
+	@media screen and (min-width: 800px)
+	{
+		#mainPanel{			
+			margin:10px 200px 0 200px;
+		}
+	}
+	.nav li a{
+		border-radius: 25px;
+	}
+	.well{
+		border-radius: 5px;
+	}
+	.endChart{
+		min-height: 300px;
+		padding: 2px;
+	}
+	.endChartInside{
+		padding: 10px;
+		min-height: 300px;
+		background-image: linear-gradient(to right, #ffffff, #fafffd);
+	}
+	.frst{
+		background-image: linear-gradient(to top, hsl(0, 0%, 100%) 0%, #ffffff 100%);
+	}
+	.scnd{
+		background-image: linear-gradient(120deg, #ffffff 0%, #e6e4e5 100%);
+	}
+	.thrd{
+		background-image: linear-gradient(120deg, #ffffff 0%, #ffffff 100%);
+	}
+</style>
+</head>
+<body>
+
+	<nav class="navbar navbar-inverse visible-xs">
+		<div class="container-fluid">
+			<div class="navbar-header">
+				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>
+					<span class="icon-bar"></span>                        
+				</button>
+				<a class="navbar-brand" href="#">Logo</a>
+			</div>
+			<div class="collapse navbar-collapse" id="myNavbar">
+				<ul class="nav navbar-nav">
+					<li class="active"><a href="#">Dashboard</a></li>
+					<li><a href="manageDevice.html">Device</a></li>
+					<li><a href="manageModel.html">Model</a></li>
+					<li><a href="manageVersion.html">Version</a></li>
+
+				</ul>
+			</div>
+		</div>
+	</nav>
+
+	<div id="mainPanel" class="container-fluid">
+		<div class="row content">
+			<div class="col-sm-3 sidenav hidden-xs">
+				<h2>Logo</h2>
+				<ul class="nav nav-pills nav-stacked">
+					<li class="active"><a href="#section1">Dashboard</a></li>
+					<li><a href="manageDevice.html">Device</a></li>
+					<li><a href="manageModel.html">Model</a></li>
+					<li><a href="manageVersion.html">Version</a></li>
+				</ul><br>
+			</div>
+			<br>
+
+			<div class="col-sm-9">
+				<div class="">
+					<!-- <form class="form-inline">
+						<div class="input-group">
+							<input type="text" class="form-control" size="80" placeholder="Search here..." required>
+							<div class="input-group-btn">
+								<button type="button" class="btn btn-danger">Search</button>
+							</div>
+						</div>
+					</form> -->
+					<br>
+				</div>
+				<div class="row">
+					<div class="col-sm-4">
+						<div class="well frst">
+							<h4>Total Devices</h4>
+							<p>|| 150</p> 
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="well scnd">
+							<h4>Total Models</h4>
+							<p>|| 300</p> 
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="well thrd">
+							<h4>Total Version</h4>
+							<p>|| 800</p> 
+						</div>
+					</div>
+					<!-- <div class="col-sm-3">
+						<div class="well">
+							<h4>Jailbreaks</h4>
+							<p>|| 1100</p> 
+						</div>
+					</div> -->
+				</div>
+				<!-- <div class="row">
+					<div class="col-sm-4">
+						<div class="well">
+							<p>Text</p> 
+							<p>Text</p> 
+							<p>Text</p> 
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="well">
+							<p>Text</p> 
+							<p>Text</p> 
+							<p>Text</p> 
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="well">
+							<p>Text</p> 
+							<p>Text</p> 
+							<p>Text</p> 
+						</div>
+					</div>
+				</div>
+				<div class="row">
+					<div class="col-sm-8">
+						<div class="well">
+							<p>Text</p> 
+						</div>
+					</div>
+					<div class="col-sm-4">
+						<div class="well">
+							<p>Text</p> 
+						</div>
+					</div>
+				</div> -->
+
+				<div class="endChart well">
+					<div class="endChartInside">
+						<center>
+							<img src="images/img-Phoenix.png" width="200px">
+						</center>
+					</div>
+				</div>
+			</div>
+		</div>
+	</div>
+
+</body>
+</html>
